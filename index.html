@@ -5,21 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>loc</title>
-    <script>
-      function getLocation() {
-        if (navigator.geolocation) {
-          navigator.geolocation.getCurrentPosition(showPosition);
-        } else {
-          console.log("geolocation not supported");
-        }
-      }
-
-      function showPosition(position) {
-        console.log(position);
-      }
-
-      getLocation();
-    </script>
+    <script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-database.js"></script>
   </head>
-  <body></body>
+  <body>
+    <script src="./main.js"></script>
+  </body>
 </html>
